@@ -31,10 +31,10 @@ jobs:
         run: |
           $username = "Skyro"
 
-          $upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.ToCharArray()
-          $lower = 'abcdefghijklmnopqrstuvwxyz'.ToCharArray()
-          $numbers = '0123456789'.ToCharArray()
-          $special = '!@#$%^&*()-_=+[]{}:,.?'.ToCharArray()
+          $upper = 'ABC'.ToCharArray()
+          $lower = 'abc'.ToCharArray()
+          $numbers = '012'.ToCharArray()
+          $special = ',.'.ToCharArray()
 
           $passwordChars = @()
           $passwordChars += $upper | Get-Random -Count 4
